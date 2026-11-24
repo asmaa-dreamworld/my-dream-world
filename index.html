@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Dream World.</title>
+<style>
+img{
+transition:0.3s;
+box-shadow:0 5px 15px purple;
+}
+.btn{
+background-color:blue;
+color:white;
+padding:10px 20px;
+border-radius:10px;
+text-decoration:none;
+display:inline-block;
+transition:0.3s;
+}
+.btn:hover{
+background-color:purple;
+transform:scale(1.1);
+}
+.btn:active{
+transform:scale(0.9);
+}
+img:hover{
+transform:scale(1.1);
+}
+#about{
+display:none;
+}
+#about:target{
+display:block;
+}
+#dreams{
+display:none;
+}
+#dreams:target{
+display:block;
+}
+#favorites{
+display:none;
+}
+#favorites:target{
+display:block;
+}
+body:has(#dreams:target) #home{
+display:none;
+}
+body:has(#about:target) #home{
+display:none;
+}
+body:has(#favorites:target) #home{
+display:none;
+}
+</style>
+</head>
+<body style="background: linear-gradient(lightpink,white);">
+<div id="home">
+<img src="girl.png" width="300" style="border-radius:20px;border: 3px solid purple;">
+<h1 style="color:purple; font-size:40px;">Hello I am Asmaa</h1>
+<h2 style="color:purple; font-size:30px;" >My Hobbies</h2>
+<ul>
+<li>Reading</li>
+<li>programing</li>
+<li>Learning languages</li>
+</ul>
+<p>I love learning languages and doing handicrafts; I also enjoy playing and exploring. </p>
+<a href="#about" class="btn">About Me</a>
+<a href="#dreams" class="btn">My Dreams</a>
+<a href="#favorites" class="btn">My Favorites</a>
+</div>
+<div id="dreams">
+<h1>A Little Piece of My World ✨</h1>
+<p>One of my dreams is to travel to Germany and study at the University of Computers and Information. Another dream is to enter Alson University.</p>
+<img src="germany.jpg" width="400">
+<br><br>
+<a href="#home">Back to Home</a>
+</div>
+<div id="about">
+<h1>About Me</h1>
+<img src="about.png" width="250" style="border-radius:20px;">
+<h2>Hello! My name is Asmaa. I am a curious girl who loves learning new things. I enjoy programming, reading,learning languages, and making handmade crafts. I always try to improve myself and follow my dreams.</h2>
+<a href="#home">Back to Home</a>
+</div>
+<div id="favorites">
+<h2>My Best Friend 🤍</h2>
+<h3>My Angel Naira 🕊️</h3>
+<p>Forever in my heart, never forgotten. You will always be a beautiful part of my story.</p>
+<p>You will always be my favorite—the one closest to my heart. Even though you are no longer with us, you still hold a special place in me. The sound of your laughter, your warm embrace, and our beautiful memories remain etched in my mind; I will never forget them. I only hope that, wherever you are, you are always happy.</p>
+<img src="cute.png" width="300">
+<h1>My Favorite Song 🎵</h1>
+<h2>Let Me Down Slowly</h2>
+This is my favorite song. 🎵
+I love listening to it whenever I feel sad or need some comfort. Somehow, its words and melody make me feel better. It's a song that always has a special place in my heart. 💜
+<img src="song.png.png" width="300">
+</div>
+</body>
+</html>
